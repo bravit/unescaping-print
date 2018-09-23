@@ -21,4 +21,4 @@ extra-source-files:
 dependencies: base >=4.10 && <4.12
 
 library:
-    exposed: true
+    exposed-modules: UnescapingPrint
