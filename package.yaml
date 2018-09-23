@@ -1,0 +1,24 @@
+name: unescaping-print
+version: "0.1"
+synopsis: Tiny package providing unescaping versions of show and print
+description:
+        This package solves the problem of escaping all "non-printable"
+        symbols by the standard `show` function. It provides the
+        `ushow` and `uprint` functions which replace `show` and `print` from
+        `Prelude`. The function `uprint` is intended to be used as
+        custom printing function in GHCi (with the `-interactive-print` option).  
+category:            Text
+license:             BSD3
+author: Vitaly Bragilevsky
+maintainer: Vitaly Bragilevsky <vit.bragilevsky@gmail.com>
+github: bravit/unescaping-print
+extra-source-files:
+    - ChangeLog.md
+    - LICENSE
+    - README.md
+    - package.yaml
+
+dependencies: base >=4.10 && <4.12
+
+library:
+    exposed: true
