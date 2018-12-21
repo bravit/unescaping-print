@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 04891bfde3ede0b6c8bebc56d692f6ccee9fe8f68e4e427cc0f10ee6dbe3f1bf
+-- hash: 1a3a0f399c7d87854a0e7cf078d214523371dc2f7e33677fdc8a125fddac35c8
 
 name:           unescaping-print
 version:        0.1
@@ -23,6 +23,7 @@ extra-source-files:
     LICENSE
     README.md
     package.yaml
+    .travis.yml
 
 source-repository head
   type: git
@@ -30,7 +31,7 @@ source-repository head
 
 library
   build-depends:
-      base >=4.10 && <4.12
+      base >=4.10 && <4.13
   exposed-modules:
       UnescapingPrint
   other-modules:
